@@ -48,7 +48,9 @@ Asumiendo que ya configuraste todos los prerrequisitos y que vas a utilizar Dock
 docker-compose up -d
 
 # Copia las variables de entorno necesarias para acceder a las bases de datos.
-cp .env.example .env
+# Son dos archivos distintos, uno para development y otro para los tests automaticos.
+cp .env.example .env.development
+cp .env.example .env.test
 
 # Instala las dependencias Node del proyecto.
 npm install
