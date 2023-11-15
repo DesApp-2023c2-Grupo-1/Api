@@ -8,10 +8,10 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER,
       },
-      Comandos: {
-        type: Sequelize.JSONB,
+      comandos: {
+        type: Sequelize.TEXT,
       },
-      Logrado: {
+      logrado: {
         type: Sequelize.BOOLEAN,
       },
       createdAt: {
